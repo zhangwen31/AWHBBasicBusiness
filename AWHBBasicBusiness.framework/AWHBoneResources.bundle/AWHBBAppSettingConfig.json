@@ -1,0 +1,91 @@
+{
+    "alarmFilter": 1,
+    "alarms": 1,
+    "appGpsColumn":[
+        {
+            "key": "drctCn",
+            "switch": 1
+        },
+        {
+            "key": "accTime",
+            "switch": 1
+        },
+        {
+            "key": "teamName",
+            "switch": 1
+        },
+        {
+            "key": "driverStatic",
+            "switch": 0
+        },
+        {
+            "key": "driverSign",
+            "switch": 0
+        },
+        {
+            "key": "alarms",
+            "switch": 0
+        },
+        {
+            "key": "addr",
+            "switch": 1
+        },
+        {
+            "key": "st1",
+            "switch": 0
+        },
+        {
+            "key": "st3",
+            "switch": 0
+        },
+        {
+            "key": "st4",
+            "switch": 0
+        },
+        {
+            "key": "st5",
+            "switch": 0
+        },
+        {
+            "key": "carName",
+            "switch": 0
+        },
+        {
+            "key": "carName",
+            "switch": 0
+        },
+        {
+            "key": "satl",
+            "switch": 0
+        },
+        {
+            "key": "sgn",
+            "switch": 0
+        }
+    ],
+    "arrears": 1,
+    "backCarColor": "#FF0024",
+    "backSpeedColor": "#D7A675",
+    "firstPage": "home",
+    "homeSet": "homeSet",
+    "mapMarker": {
+        "backCarColor": "#7AC668",
+        "backSpeedColor": "#FFCC00",
+        "colorType": 2,
+        "iconSize": 60,
+        "showPlate": 0,
+        "showSpeed": 1,
+        "textColor": "#333333",
+        "textSize": 14
+    },
+    "quickSet": [
+        109,
+        101,
+        104,
+        106,
+        107,
+        105,
+        108,
+        905
+    ]
+}

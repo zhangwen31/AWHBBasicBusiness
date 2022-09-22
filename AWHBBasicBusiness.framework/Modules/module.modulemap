@@ -1,0 +1,6 @@
+framework module AWHBBasicBusiness {
+  umbrella header "AWHBBasicBusiness.h"
+
+  export *
+  module * { export * }
+}
