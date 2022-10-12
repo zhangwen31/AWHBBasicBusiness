@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AWHBBasicBusiness"
-  s.version      = "0.0.3"
+  s.version      = "0.0.1"
   s.summary      = "A short description of AWHBBasicBusiness."
 
   # This description is used to generate tags and improve search results.
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   TODO: 添加描述内容
   }
 
-  s.homepage     = "https://gitee.com/zhangwen31/AWHBBasicBusiness"
+  s.homepage     = "https://github.com/zhangwen31/AWHBBasicBusiness"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -100,7 +100,7 @@ Pod::Spec.new do |s|
   #  #支持git、hg、bzr、svn和HTTP。
   #
 
-  s.source       = { :git => "https://gitee.com/zhangwen31/AWHBBasicBusiness.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/zhangwen31/AWHBBasicBusiness.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code 源代码――――――――――――――――――――――――――――――――― #
@@ -173,24 +173,24 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
    
-#  s.dependency "UMCommon"
-#  s.dependency "UMDevice"
-#  s.dependency "UMShare/UI"
-#  s.dependency "UMShare/Social/WeChat"
+  s.dependency "UMCommon"
+  s.dependency "UMDevice"
+  s.dependency "UMShare/UI"
+  s.dependency "UMShare/Social/WeChat"
   
-#  s.dependency "AWHBoneRuntime"
-#  s.dependency "AWHBNetworkRequest"
+  s.dependency "AWHBoneRuntime"
+  s.dependency "AWHBNetworkRequest"
   
-#  s.dependency "MBProgressHUD"
-#  s.dependency "Masonry"
-#  s.dependency "MJExtension"
-#  s.dependency "JJException"
-#  s.dependency "YYImage"
-#  s.dependency "YYWebImage"
-#  s.dependency "AFNetworking"
-#  s.dependency "SDWebImage"
-#  s.dependency "YYModel"
-#  s.dependency "AWHBoneResources"
-#  s.dependency "IQKeyboardManager"
+  s.dependency "MBProgressHUD"
+  s.dependency "Masonry"
+  s.dependency "MJExtension"
+  s.dependency "JJException"
+  s.dependency "YYImage"
+  s.dependency "YYWebImage"
+  s.dependency "AFNetworking"
+  s.dependency "SDWebImage"
+  s.dependency "YYModel"
+  s.dependency "AWHBoneResources"
+  s.dependency "IQKeyboardManager"
 
 end
