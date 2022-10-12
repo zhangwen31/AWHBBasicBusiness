@@ -6,6 +6,7 @@
 //
 
 #import <AWHBBasicBusiness/AWHBBBaseModel.h>
+#import <AWHBoneResources/AWHBoneResources.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
