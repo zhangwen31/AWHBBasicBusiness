@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AWHBBasicBusiness"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "A short description of AWHBBasicBusiness."
 
   # This description is used to generate tags and improve search results.
@@ -173,11 +173,6 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
    
-  s.dependency "UMCommon"
-  s.dependency "UMDevice"
-  s.dependency "UMShare/UI"
-  s.dependency "UMShare/Social/WeChat"
-  
   s.dependency "AWHBoneRuntime"
   s.dependency "AWHBNetworkRequest"
   
