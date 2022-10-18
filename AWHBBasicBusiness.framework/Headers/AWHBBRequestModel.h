@@ -29,6 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(void)requestTerminalVideoURL:(NSString *)URL hudView:(UIView *)hudView  callback:(void (^)(NSMutableArray *dataArray,NSString *str))callBack;
 //保存本地配置
 +(void)requestSettingConfigSaveWithKey:(NSString *)key data:(NSString *)data;
+//单车登录保存定位信息设置
++(void)requestSaveGpsColumnByCarWithCarIds:(NSString *)carIds data:(NSString *)data;
 //更新本地配置
 + (void)updateLocationSettingConfig;
 @end
