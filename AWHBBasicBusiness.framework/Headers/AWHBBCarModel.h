@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy)NSString *glat;//google纬度
 @property(nonatomic,copy)NSString *drvPhone;
 @property(nonatomic,copy)NSString *addr;
+//驾驶员（登签）
+@property(nonatomic,copy)NSString *drvSign;
 //车辆名称
 @property(nonatomic,copy)NSString *teamName;
 //车辆名称
@@ -82,6 +84,10 @@ NS_ASSUME_NONNULL_BEGIN
 //是否展示大头针 车辆设备需要
 @property (nonatomic,assign) BOOL isShowPin;
 @property(nonatomic,strong)NSString *wxShareUrl;
+//车主名称
+@property(nonatomic,strong)NSString *owner;
+//车主电话
+@property(nonatomic,strong)NSString *ownerPhone;
 
 @end
 

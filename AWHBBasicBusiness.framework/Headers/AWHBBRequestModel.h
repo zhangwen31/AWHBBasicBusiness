@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(void)requestSaveGpsColumnByCarWithCarIds:(NSString *)carIds data:(NSString *)data;
 //更新本地配置
 + (void)updateLocationSettingConfig;
+//个推ClientId同步服务端
++ (void)appGeTuiPushClientId;
 @end
 
 NS_ASSUME_NONNULL_END
