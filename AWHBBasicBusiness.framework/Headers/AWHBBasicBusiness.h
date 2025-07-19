@@ -36,4 +36,15 @@ FOUNDATION_EXPORT const unsigned char AWHBBasicBusinessVersionString[];
 #import <AWHBBasicBusiness/AWHBBBSettingConfig.h>
 #import <AWHBBasicBusiness/AWHBBBAppGpsColumnModel.h>
 #import <AWHBBasicBusiness/AWHBBBMapMarkerModel.h>
-
+#import <AWHBBasicBusiness/AWHBBBZoomImageView.h>
+#import <AWHBBasicBusiness/UITableViewCell+AWHBBB.h>
+#import <AWHBBasicBusiness/UITableViewHeaderFooterView+AWHBBB.h>
+#import <AWHBBasicBusiness/AWHBBBTableViewCell.h>
+#import <AWHBBasicBusiness/AWHBBBHeaderFooterView.h>
+#import <AWHBBasicBusiness/UITableViewCell+AWHBBB.h>
+#import <AWHBBasicBusiness/UITableViewHeaderFooterView+AWHBBB.h>
+#import <AWHBBasicBusiness/AWHBBBGBChart.h>
+#import <AWHBBasicBusiness/AWHBBBTipsView.h>
+#import <AWHBBasicBusiness/AWHBBBAccessAuthorityView.h>
+#import <AWHBBasicBusiness/AWHBBBScanViewController.h>
+#import <AWHBBasicBusiness/AWHBBBSgnListModel.h>

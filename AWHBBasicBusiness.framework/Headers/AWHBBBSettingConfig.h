@@ -9,6 +9,8 @@
 #import <AWHBBasicBusiness/AWHBBBAppGpsColumnModel.h>
 #import <AWHBBasicBusiness/AWHBBBMapMarkerModel.h>
 
+#define AWHBBBSettingMapRefreshTimeNotification     @"AWHBBBSettingMapRefreshTimeNotification"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AWHBBBSettingConfig : NSObject
@@ -28,8 +30,16 @@ NS_ASSUME_NONNULL_BEGIN
  * st4：湿度信息
  * st5：水位信息
  * carName：车辆名称
- * satl：定位信号
- * sgn：通讯信号
+ * satl：定位信号  默认展示，不列表展示
+ * sgn：通讯信号  默认展示，不列表展示
+ * appDoor1 前门
+ * appDoor2 中门
+ * appDoor3 后门
+ * appDoor4 驾驶席门
+ * appDoor5 门5
+ * elect: 电量
+ * fwdRevState: 正反转状态
+ * fwdRevSpeed: 正反转速度
  */
 @property(nonatomic, strong) NSArray<AWHBBBAppGpsColumnModel *> *appGpsColumn;
 /**
@@ -44,6 +54,18 @@ NS_ASSUME_NONNULL_BEGIN
  * 欠费通知开关
  */
 @property(nonatomic, assign) BOOL arrears;
+/**
+ * 车辆固定地图中心
+ */
+@property(nonatomic, assign) BOOL fixCenter;
+/**
+ * 【系统设置--欠费通知开关】页面，增加权限控制
+ */
+@property(nonatomic, assign) BOOL arrearsAuth;
+/**
+ * 地图刷新时间
+ */
+@property(nonatomic, strong) NSString *mapRefreshTime;
 /**
  *
  */
@@ -68,6 +90,20 @@ NS_ASSUME_NONNULL_BEGIN
  *  ——————-地图图标设置（样式、字体、图标、色彩）状态
  */
 @property(nonatomic, strong) AWHBBBMapMarkerModel *mapMarker;
+/**
+ * 登录模式 APP监控模式："0":常规模式、"1":单车简易模式、"2":多车简易模式、"3":纯定位模式
+ * 单车简易模式：删除底部的报表，左侧功能列表增加“消息公告”
+ * 多车简易模式：左侧功能列表增加“消息公告”
+ * 纯定位模式：极简功能删除跳转单车监控，左侧功能列表增加“消息公告”
+ */
+@property(nonatomic, strong) NSString *mode;
+
+/**
+ * 车辆固定地图中心
+ */
+- (BOOL)getCarFixedMapCenter;
+
+- (void)setCarFixedMapCenter:(BOOL)mapCenter;
 
 @end
 

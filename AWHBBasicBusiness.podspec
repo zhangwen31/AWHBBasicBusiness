@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AWHBBasicBusiness"
-  s.version      = "0.0.7"
+  s.version      = "1.0.0"
   s.summary      = "A short description of AWHBBasicBusiness."
 
   # This description is used to generate tags and improve search results.
@@ -170,6 +170,21 @@ Pod::Spec.new do |s|
 
    s.requires_arc = true
    
+   # 公共头文件导进组件.pch文件中,加入后，执行pod install, MXStatService-prefix.pch 文件中就有这些头文件
+   s.prefix_header_contents = <<-EOS
+   #import <AWHBoneRuntime/AWHBoneRuntime.h>
+   #import <AWHBNetworkRequest/AWHBNetworkRequest.h>
+   #import <MBProgressHUD/MBProgressHUD.h>
+   #import <Masonry/Masonry.h>
+   #import <MJExtension/MJExtension.h>
+   #import <SDWebImage/SDWebImage.h>
+   #import <YYModel/YYModel.h>
+   #import <AWHBoneResources/AWHBoneResources.h>
+   #import <IQKeyboardManager/IQKeyboardManager.h>
+   #import <SDWebImage/SDWebImage.h>
+   #import <AWHConnectSocket/AWHConnectSocket.h>
+   
+   EOS
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
    
@@ -179,13 +194,14 @@ Pod::Spec.new do |s|
   s.dependency "MBProgressHUD"
   s.dependency "Masonry"
   s.dependency "MJExtension"
-  s.dependency "JJException"
   s.dependency "YYImage"
-  s.dependency "YYWebImage"
   s.dependency "AFNetworking"
   s.dependency "SDWebImage"
   s.dependency "YYModel"
   s.dependency "AWHBoneResources"
   s.dependency "IQKeyboardManager"
+  s.dependency "SDWebImage"
+  s.dependency "CocoaAsyncSocket"
+  s.dependency "AWHConnectSocket"
 
 end

@@ -11,7 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 typedef enum : NSUInteger {
     AWHBBDatePickerViewDateTimeMode,//年月日,时分
     AWHBBDatePickerViewDateMode,//年月日
-    AWHBBDatePickerViewTimeMode//时分
+    AWHBBDatePickerViewTimeMode,//时分
+    AWHBBDatePickerViewTimeSecond//年月日,时分秒
 } AWHBBDatePickerViewMode;
 
 @protocol AWHBBDateTimePickerViewDelegate <NSObject>
@@ -34,6 +35,14 @@ typedef enum : NSUInteger {
  * 设置当前时间
  */
 @property(nonatomic, strong)NSDate*currentDate;
+/**
+ * 设置最小时间 如果最大时间与最小时间都有值 必须小于最大时间 否则无效
+ */
+@property(nonatomic, strong)NSDate*minDate;
+/**
+ * 设置最大时间 如果最大时间与最小时间都有值 必须大于最小时间 否则无效
+ */
+@property(nonatomic, strong)NSDate*maxDate;
 /**
  * 设置中心标题文字
  */

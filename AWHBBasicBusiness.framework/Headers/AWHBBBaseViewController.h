@@ -12,4 +12,6 @@
 
 @property (nonatomic,readonly,strong)UIButton *leftBackButton;
 @property(nonatomic,assign)BOOL isCanPop;
+@property(nonatomic,assign)BOOL isNoCanPop;
+- (void)back;
 @end

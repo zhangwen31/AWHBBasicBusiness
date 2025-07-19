@@ -12,6 +12,7 @@
 #import "AWHBBContentView.h"
 @interface AWHBBPageView : UIView
 
+@property (nonatomic, copy) void (^ClickCurrentIndex)(NSInteger currentIndex);
 /**
  直接在需要PageView的控制器中，一句代码实例化(调用此方法),如需更改TitleView和ContentView的Frame在XTitleStyle.m中重新设置Frame即可
 

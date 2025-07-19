@@ -12,6 +12,7 @@
 @property(nonatomic,copy)NSString *alarmFlag;
 @property(nonatomic,copy)NSString *avType;
 @property(nonatomic,copy)NSString *channel;
+@property(nonatomic,copy)NSString *channelName;
 @property(nonatomic,copy)NSString *endTime;
 @property(nonatomic,copy)NSString *fileSize;
 @property(nonatomic,copy)NSString *startTime;
