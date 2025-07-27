@@ -82,8 +82,9 @@ Pod::Spec.new do |s|
   #  部署目标。您可以选择在平台之后包含目标。
   #
 
-  s.platform     = :ios, "13.0"
+  s.platform = :ios, "13.0"
   # s.platform     = :ios, "9.0"
+
 
   #  When using multiple platforms
   s.ios.deployment_target = "13.0"
@@ -115,21 +116,23 @@ Pod::Spec.new do |s|
   #  不包括公共头文件将使所有头文件公开。
   #
 
-#  s.source_files  = "AWHBBasicBusiness/**/*.{h,m,swift}"
+#  s.source_files  = "AWHBBasicBusiness/*.{h,m,swift}"
 #  # s.exclude_files = "Classes/Exclude"   #排除文件
 #
-#  s.public_header_files = "AWHBBasicBusiness/**/*.h"
- 
- s.vendored_frameworks = ['AWHBBasicBusiness.framework']
- s.source_files = 'AWHBBasicBusiness.framework/Headers/*h'
- s.pod_target_xcconfig = {
+#  s.public_header_files = "AWHBBasicBusiness/*.h"
+
+  s.vendored_frameworks = ['AWHBBasicBusiness.framework']
+
+  s.pod_target_xcconfig = {
     "IPHONEOS_DEPLOYMENT_TARGET" => "13.0",
     'VALID_ARCHS' => 'x86_64 armv7 arm64'
   }
   s.user_target_xcconfig = {
     "IPHONEOS_DEPLOYMENT_TARGET" => "13.0"
   }
- s.static_framework = true
+
+  s.source_files = 'AWHBBasicBusiness.framework/Headers/*h'
+  s.static_framework = true
 
   # ――― Resources 资源――――――――――――――――――――――――――――――――――― #
   #
@@ -144,7 +147,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-#  s.resources = ['Resources/AWHBBasicBusiness.bundle']
+  #s.resources = ['Resources/AWHBBasicBusiness.bundle']
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"  #保存路径
 
