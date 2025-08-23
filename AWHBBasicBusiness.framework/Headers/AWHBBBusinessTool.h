@@ -98,6 +98,10 @@ extern NSString *const AWHBBBVehicleCardFunctionJumpNotification; //车辆状态
 
 + (void)asynCheckIp:(NSString *)ip port:(NSString *)port complete:(nullable void (^)(BOOL isSuccess))success;
 
++ (void)setMapServicesApiKey:(NSString *)apiKey;
+
++ (NSString *)getMapServicesApiKey;
+
 @end
 
 NS_ASSUME_NONNULL_END
