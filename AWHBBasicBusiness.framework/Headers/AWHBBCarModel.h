@@ -171,6 +171,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy)NSString *cmpId;
 /// 连续驾驶
 @property(nonatomic,copy)NSString *coiledDriving;
+/// 极简监控拼接字段
+@property(nonatomic,copy)NSString *minimalistMonitoringStateText;
 
 - (NSArray *)getTirePressureArr;
 
