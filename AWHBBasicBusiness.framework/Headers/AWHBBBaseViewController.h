@@ -14,4 +14,8 @@
 @property(nonatomic,assign)BOOL isCanPop;
 @property(nonatomic,assign)BOOL isNoCanPop;
 - (void)back;
+- (UIImage *)gradientImageWithBounds:(CGRect)bounds;
+// 刷新UI
+- (void)refreshUI;
+
 @end

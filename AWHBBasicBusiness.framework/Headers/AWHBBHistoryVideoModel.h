@@ -19,4 +19,10 @@
 @property(nonatomic,copy)NSString *storeType;
 @property(nonatomic,copy)NSString *streamType;
 @property(nonatomic,copy)NSString *fileName;
+@property(nonatomic,copy)NSString *videoSavePath;
+
+/// 获取视频保存名称
+/// - Parameter deviceName: 设备名称
+- (NSString *)getvideoSaveName:(NSString *)deviceName;
+
 @end

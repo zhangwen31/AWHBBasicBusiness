@@ -44,6 +44,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, assign) BOOL showSpeed;
 /**
+ * 图标排列 是否展示 上下
+ */
+@property(nonatomic, assign) BOOL markerType;
+/**
  * 14:默认 16:大 18:超大 20:特大, // ——————-字体大小
  */
 @property(nonatomic, assign) NSInteger textSize;

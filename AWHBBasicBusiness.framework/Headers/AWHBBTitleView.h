@@ -23,6 +23,13 @@
 - (void)setTitleWithProgress:(CGFloat)progress sourceIndex:(NSInteger)sourceIndex targetIndex:(NSInteger)targetIndex;
 
 - (void)contentViewDidEndScroll;
+// 切换到对应的位置
+- (void)changeCurrentIndex:(NSInteger)currentIndex;
+
+// 开启浏览动画
+- (void)startBrowsingAnimation;
+// 停止浏览动画
+- (void)stopBrowsingAnimation;
 
 //更新标题内容
 - (void)updateTitles:(NSArray <NSString *>*)titles;

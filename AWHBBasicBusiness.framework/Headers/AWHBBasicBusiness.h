@@ -48,3 +48,6 @@ FOUNDATION_EXPORT const unsigned char AWHBBasicBusinessVersionString[];
 #import <AWHBBasicBusiness/AWHBBBAccessAuthorityView.h>
 #import <AWHBBasicBusiness/AWHBBBScanViewController.h>
 #import <AWHBBasicBusiness/AWHBBBSgnListModel.h>
+#import <AWHBBasicBusiness/AWHBBBFontChangeView.h>
+#import <AWHBBasicBusiness/AWHBBVideoDownloadManager.h>
+#import <AWHBBasicBusiness/AWHBBBCarInfoSettingModel.h>

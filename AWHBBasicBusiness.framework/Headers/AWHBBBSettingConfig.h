@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <AWHBBasicBusiness/AWHBBBAppGpsColumnModel.h>
 #import <AWHBBasicBusiness/AWHBBBMapMarkerModel.h>
+#import <AWHBBasicBusiness/AWHBBBCarInfoSettingModel.h>
 
 #define AWHBBBSettingMapRefreshTimeNotification     @"AWHBBBSettingMapRefreshTimeNotification"
 
@@ -51,6 +52,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, assign) BOOL alarms;
 /**
+ * 上下线通知开关
+ */
+@property(nonatomic, assign) BOOL onlineNotice;
+/**
  * 欠费通知开关
  */
 @property(nonatomic, assign) BOOL arrears;
@@ -58,6 +63,10 @@ NS_ASSUME_NONNULL_BEGIN
  * 车辆固定地图中心
  */
 @property(nonatomic, assign) BOOL fixCenter;
+/**
+ * 多车监控列表
+ */
+@property(nonatomic, assign) BOOL isTreeOpen;
 /**
  * 【系统设置--欠费通知开关】页面，增加权限控制
  */
@@ -97,6 +106,10 @@ NS_ASSUME_NONNULL_BEGIN
  * 纯定位模式：极简功能删除跳转单车监控，左侧功能列表增加“消息公告”
  */
 @property(nonatomic, strong) NSString *mode;
+/**
+ * 选车信息设置
+ */
+@property(nonatomic, strong) AWHBBBCarInfoSettingModel *carOptions;
 
 /**
  * 车辆固定地图中心

@@ -10,6 +10,8 @@
 /** */
 @protocol AWHBBBReturnResultDelegate <NSObject>
 -(void)returnResult:(NSString *)result;
+@optional
+- (void)backPage;
 @end
 
 NS_ASSUME_NONNULL_BEGIN

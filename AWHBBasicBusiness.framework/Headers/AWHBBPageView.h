@@ -26,5 +26,11 @@
 - (AWHBBPageView *)initWithFrame:(CGRect)frame titles:(NSArray <NSString *>*)titles style:(AWHBBTitleStyle *)style childVcs:(NSArray <UIViewController *>*)childVcs parentVc:(UIViewController *)parentVc;
 //更新标题内容
 - (void)updateTitles:(NSArray <NSString *>*)titles;
+// 切换到对应的位置
+- (void)changeCurrentIndex:(NSInteger)currentIndex;
+// 开启浏览动画
+- (void)startBrowsingAnimation;
+// 停止浏览动画
+- (void)stopBrowsingAnimation;
 
 @end
